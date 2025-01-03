@@ -1,0 +1,75 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    perspective: 1000px; /* Ensure the flip animation looks correct */
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card-front {
+    background: #f2f2f2;
+}
+
+.card-back {
+    background: #fbd7f8;
+    color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the card */
+    border-radius: 4px;
+}
+
+.card-back-text {
+    font-size: 16px; /* Reduced font size to fit more content */
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal; /* Allows content to break naturally */
+    overflow: hidden; /* Prevents content from overflowing */
+    text-overflow: ellipsis; /* Adds ellipsis if content overflows */
+    padding: 10px;
+    box-sizing: border-box;
+}
+

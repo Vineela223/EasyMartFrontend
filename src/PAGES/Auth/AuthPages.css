@@ -1,0 +1,200 @@
+.authpage {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Ensure page can scroll */
+}
+
+.authcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; /* Set a base width for the container */
+    max-width: 1100px; /* Maximum width for larger screens */
+    flex-grow: 1; /* Allow the container to grow to fit available space */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Clip overflowing content */
+    margin: 2% auto; /* Center with margin */
+    background-color: rgba(0, 0, 0, 0.798);
+}
+
+.authcont img {
+    width: 50%; /* Adjust image width for larger screens */
+    height: auto; /* Allow height to adjust proportionally */
+    object-fit: cover; /* Ensures the image covers the container without distorting */
+}
+
+.authform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%; /* Adjust form width accordingly */
+    padding: 30px; /* Initial padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.authcont .formgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%; /* Ensure form groups take full width */
+    margin: 10px 0;
+}
+
+.authform h1 {
+    font-size: 45px; /* Font size for heading */
+    font-weight: 500;
+    color: var(--col1);
+    text-align: center; /* Center the heading */
+}
+
+.authform label {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.authform input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px; /* Adjust font size */
+    color: white;
+    background-color: rgba(255, 255, 255, 0.042);
+}
+
+.authform button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--col1);
+    cursor: pointer;
+}
+
+.authform button:hover {
+    background-color: white;
+    color: var(--col1);
+}
+
+.authform p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.authform p:hover {
+    color: var(--col1);
+    cursor: pointer;
+}
+
+.authform .or {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px; /* Increase gap between input fields */
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Responsive styles for better fitting */
+@media (max-width: 1200px) {
+    .authcont {
+        flex-direction: column; /* Stack elements vertically */
+        width: 85%; /* Slightly reduce width */
+    }
+
+    .authcont img {
+        width: 100%; /* Image occupies full width */
+        height: auto; /* Adjust height accordingly */
+    }
+
+    .authform {
+        width: 100%; /* Form takes full width */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .authform h1 {
+        font-size: 38px; /* Reduce heading size */
+    }
+}
+
+@media (max-width: 992px) {
+    .authcont {
+        width: 90%; /* Further reduce width */
+    }
+
+    .authform {
+        padding: 15px;
+        gap: 10px; /* Reduce gap between elements */
+    }
+
+    .authform h1 {
+        font-size: 35px; /* Further reduce heading size */
+    }
+}
+
+@media (max-width: 768px) {
+    .authcont {
+        width: 95%; /* Almost full width on mobile */
+    }
+
+    .authform {
+        padding: 15px;
+    }
+
+    .authform h1 {
+        font-size: 30px; /* Smaller font for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .authcont {
+        width: 100%; /* Full width on very small screens */
+        margin: 0; /* Remove margin */
+    }
+
+    .authcont img {
+        width: 100%;
+        height: auto; /* Ensure image scales properly */
+    }
+
+    .authform {
+        width: 100%; /* Full width on small screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .authform h1 {
+        font-size: 26px; /* Make the heading smaller for very small screens */
+    }
+
+    .authform button {
+        font-size: 18px; /* Smaller button font size */
+    }
+
+    .authform p {
+        font-size: 16px; /* Smaller paragraph font size */
+    }
+
+    .authform .or {
+        font-size: 16px; /* Adjust or text size */
+    }
+}

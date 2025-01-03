@@ -1,0 +1,98 @@
+
+
+.add-product-form h2 {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.add-product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px; /* Set a max width for the form */
+    margin: auto; /* Center the form horizontally */
+}
+
+.add-product-form button{
+
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: var(--col1);
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a responsive grid */
+    gap: 15px; /* Space between grid items */
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-preview {
+    margin-top: 20px;
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+}
+
+.image-preview img {
+    max-width: 200px; /* Set max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+}
+
+
+
+.image-preview-container {
+    display: inline-block;
+    margin: 5px;
+    position: relative; /* Ensure this is set */
+}
+
+.image-preview .delbtn {
+    background-color: var(--col1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -2px;
+    top: -10px;
+    cursor: pointer;
+    display: flex; /* Center SVG */
+    align-items: center;
+    justify-content: center;
+}
+

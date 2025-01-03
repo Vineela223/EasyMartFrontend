@@ -1,0 +1,93 @@
+.admindashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.admindashboard-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 10px;
+}
+
+.admindashboard .admindashboard-content .left {
+    width: 20%;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    min-height: 50vh;
+}
+
+.admindashboard .admindashboard-content .right {
+    width: 80%;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    min-height: 50vh;
+}
+
+@media (max-width: 1000px) {
+    .admindashboard .admindashboard-content .left {
+        width: 30%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        min-height: 50vh;
+    }
+
+    .admindashboard-content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10vh;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .admindashboard .admindashboard-content .left {
+        width: 30%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        min-height: 50vh;
+    }
+    .admindashboard .admindashboard-content .right {
+        width: 68%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        min-height: 50vh;
+    }
+
+    .admindashboard-content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10vh;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .admindashboard-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10vh;
+        gap: 20px;
+    }
+
+    .admindashboard .admindashboard-content .left {
+        width: 97%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        align-self: center;
+        min-height: 0;
+    }
+
+    .admindashboard .admindashboard-content .right {
+        width: 97%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        align-self: center;
+        min-height: 0;
+    }
+}

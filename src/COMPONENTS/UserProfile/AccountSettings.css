@@ -1,0 +1,98 @@
+.accountsettings{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.accountsettings h1{
+    padding: 10px 20px;
+}
+
+
+.accountsettings .form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.accountsettings .form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 10px;
+}
+
+.accountsettings .form .form-group label{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.accountsettings .form .form-group input{
+    padding: 10px 20px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    outline: none;
+}
+
+.accountsettings .form .form-group input:focus{
+    border: 1px solid var(--col1);
+}
+
+
+
+/* Style for the checkbox alignment */
+.form-group .checkbox-group {
+    display: flex;
+    align-items: right;
+    gap: 15px; /* Space between checkbox and label */
+    margin-bottom: 10px;
+}
+/* Additional styling to better align the checkbox */
+.checkbox-group input[type="checkbox"] {
+
+    position: relative;
+    top: 20px; /* Adjust this value to fine-tune the vertical position */
+}
+/* Password fields formatted in one row */
+.password-fields {
+    display: flex;
+    gap: 20px; /* Space between old and new password fields */
+}
+
+/* Optional: Make form group items in password fields wider */
+.password-fields .form-group {
+    flex: 1;
+}
+
+
+@media (max-width: 800px){
+    .accountsettings .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .accountsettings .form .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin: 10px;
+    }
+    .accountsettings h1{
+        font-size: 20px;
+    }
+    .accountsettings .form .form-group label{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+} 

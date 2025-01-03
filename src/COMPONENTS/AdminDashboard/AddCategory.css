@@ -1,0 +1,47 @@
+.category-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-form input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+ button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: var(--col1);
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-container
+{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+}
+
+

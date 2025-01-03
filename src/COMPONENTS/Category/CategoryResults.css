@@ -1,0 +1,52 @@
+
+.banner img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.filter-sort-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -120px; /* Space between banner and filter/sort */
+}
+
+
+.filters {
+    width: 20%;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+.products-container {
+    width: 80%;
+    padding: 15px;
+}
+
+.sort-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.pagination button.active {
+    font-weight: bold;
+}

@@ -1,0 +1,121 @@
+.adminsidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.adminsidebar .s1, .adminsidebar .s2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.adminsidebar .s1 svg {
+    width: 30px;
+    height: 30px;
+    color: gray; /* Default icon color for inactive links */
+}
+
+.adminsidebar .s2 svg {
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255); /* Icon color for active links */
+}
+
+.adminsidebar .s1:hover {
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+    cursor: pointer;
+    color: gray; /* Text color on hover for inactive links */
+}
+
+.adminsidebar .s2 {
+    background-color: var(--col1); /* Active link background color */
+    border-radius: 5px;
+    cursor: pointer;
+    color: white; /* Text color for active link */
+}
+
+/*  dropdown*/
+
+/* Dropdown styling */
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 40px; /* Adjust to control spacing from Products */
+    left: 0;
+    z-index: 10;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px 0;
+    width: 200px; /* Same width as Products link */
+}
+
+.stylenone {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown items */
+.dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .adminsidebar span {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .adminsidebar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .adminsidebar .s1, .adminsidebar .s2 {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        padding: 3px;
+    }
+
+    .adminsidebar .s1 {
+        background-color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        padding: 5px 20px; /* Adjust padding for smaller buttons */
+    }
+
+    .adminsidebar .s2 {
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        padding: 5px 20px; /* Adjust padding for smaller buttons */
+    }
+
+    .adminsidebar span {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
